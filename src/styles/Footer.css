@@ -1,0 +1,145 @@
+.footer {
+  background-color: var(--sadd-red);
+  color: var(--white);
+  padding: 40px 0 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.footer-info {
+  flex: 1;
+  min-width: 300px;
+  margin-bottom: 20px;
+}
+
+.footer-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-info p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 2;
+  justify-content: space-around;
+}
+
+.footer-link-section {
+  margin-bottom: 20px;
+  min-width: 200px;
+}
+
+.footer-link-section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-link-section h4:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 50px;
+  height: 2px;
+  background-color: var(--sadd-yellow);
+}
+
+.footer-link-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-link-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-link-section ul li a {
+  color: var(--white);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-link-section ul li a:hover {
+  color: var(--sadd-yellow);
+  padding-left: 5px;
+}
+
+.footer-social-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-social-icon {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.footer-social-icon span {
+  margin-left: 10px;
+}
+
+.footer-social-icon:hover {
+  color: var(--sadd-yellow);
+  transform: translateX(5px);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+  
+  .footer-info {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .footer-link-section h4:after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .footer-link-section {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .footer-social-icons {
+    align-items: center;
+  }
+}
