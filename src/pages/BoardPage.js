@@ -49,7 +49,7 @@ function BoardPage() {
       id: 7,
       name: 'Brendan Lo',
       position: 'Webmaster',
-      bio: 'ninja',
+      bio: 'Brendan does web development, biology research (wet-lab and AI/ML), and game development.',
       image: 'https://i.postimg.cc/26DWbGSY/piceditedv1.jpg'
     }
   ];
