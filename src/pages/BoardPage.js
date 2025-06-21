@@ -7,43 +7,50 @@ function BoardPage() {
       id: 1,
       name: 'Alvin Li',
       position: 'President',
-      bio: 'Alvin Li is a junior.... ',
-      image: 'https://randomuser.me/api/portraits/women/1.jpg'
+      bio: "Alvin is a junior at Great Neck South who aims to guide students through adolescent stress, cope with academic pressure, and protect against bullying. He promotes his peers to speak out on school's learning environment, home's living environment and present any difficulty during teenage years. In his free time, he enjoys playing the guitar, soccer, and video editing.",
+      image: 'https://i.postimg.cc/6qhJTTNV/alvinboardmember.jpg'
     },
     {
       id: 2,
       name: 'Yutong Ren',
-      position: 'ninja',
-      bio: 'Yutong Ren is a junior.... ',
-      image: 'https://randomuser.me/api/portraits/women/1.jpg'
+      position: 'Vice President',
+      bio: 'Yutong Ren is a junior who is a passionate coder, and always wants to help others.',
+      image: 'https://i.postimg.cc/tJzJyXSw/atongimg.jpg'
     },
     {
       id: 3,
-      name: 'Ninja',
-      position: 'Secretary',
-      bio: ' Ninja',
-      image: 'https://randomuser.me/api/portraits/women/1.jpg'
+      name: 'Ivan Chen',
+      position: 'Assistance Manager',
+      bio: 'Ivan loves playing valorant, gaming, and spreading messages of the terrible events that have happened on 9/11.',
+      image: 'https://i.postimg.cc/25vzrk3G/ivangamer.png'
     },
     {
       id: 4,
-      name: 'ninja',
-      position: 'ninja',
+      name: 'Junmo Kim',
+      position: 'Social Media Co-Manager',
       bio: 'ninja',
-      image: 'https://randomuser.me/api/portraits/women/1.jpg'
+      image: 'https://i.postimg.cc/25vzrk3G/ivangamer.png'
     },
     {
       id: 5,
-      name: 'ninja',
-      position: 'ninja',
+      name:'Jolynn',
+      position: 'Social Media Co-Manager',
       bio: 'ninja',
-      image: 'https://randomuser.me/api/portraits/women/1.jpg'
+      image: 'https://i.postimg.cc/25vzrk3G/ivangamer.png'
     },
     {
       id: 6,
-      name: 'nijan',
-      position: 'ninja',
+      name: 'Kala Jagoda',
+      position: 'Treasurer',
       bio: 'ninja',
-      image: 'https://randomuser.me/api/portraits/women/1.jpg'
+      image: 'https://i.postimg.cc/25vzrk3G/ivangamer.png'
+    },
+    {
+      id: 7,
+      name: 'Brendan Lo',
+      position: 'Webmaster',
+      bio: 'ninja',
+      image: 'https://i.postimg.cc/26DWbGSY/piceditedv1.jpg'
     }
   ];
 
@@ -64,8 +71,23 @@ function BoardPage() {
             </p>
           </div>
 
+          {/* Alvin on his own row */}
+          <div className="board-president-row">
+            <div className="member-card president-card">
+              <div className="member-image">
+                <img src={boardMembers[0].image} alt={boardMembers[0].name} />
+              </div>
+              <div className="member-info">
+                <h3 className="member-name">{boardMembers[0].name}</h3>
+                <h4 className="member-position">{boardMembers[0].position}</h4>
+                <p className="member-bio">{boardMembers[0].bio}</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Other board members in a grid */}
           <div className="board-members">
-            {boardMembers.map(member => (
+            {boardMembers.slice(1).map(member => (
               <div className="member-card" key={member.id}>
                 <div className="member-image">
                   <img src={member.image} alt={member.name} />
@@ -80,18 +102,6 @@ function BoardPage() {
           </div>
         </section>
 
-        <section className="section join-board-section">
-          <h2 className="section-title">Interested in Joining the Board?</h2>
-          <div className="join-board-content">
-            <p>
-              Board elections are held at the end of each school year. If you're interested in taking on a leadership role in the SADD Club, attend our meetings regularly and express your interest to the current board members.
-            </p>
-            <p>
-              Leadership positions are a great way to make a difference in our school community while developing valuable skills that will benefit you in college and beyond.
-            </p>
-            <a href="#" className="btn">Learn About Elections</a>
-          </div>
-        </section>
       </div>
     </>
   );

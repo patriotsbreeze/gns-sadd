@@ -39,11 +39,15 @@
 }
 
 .member-card {
-  background-color: var(--white);
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 480px;
 }
 
 .member-card:hover {
@@ -52,15 +56,26 @@
 }
 
 .member-image {
-  height: 250px;
+  width: 100%;
+  height: 300px;
+  margin: 0;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  box-shadow: none;
+  background: #eaeaea;
 }
 
 .member-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  aspect-ratio: unset;
+  border-radius: 0;
   transition: all 0.5s ease;
+  display: block;
 }
 
 .member-card:hover .member-image img {
@@ -68,7 +83,11 @@
 }
 
 .member-info {
-  padding: 20px;
+  padding: 24px 20px 20px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .member-name {
@@ -126,4 +145,18 @@
   .board-members {
     grid-template-columns: 1fr;
   }
+}
+
+.board-president-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.president-card {
+  max-width: 370px;
+  width: 100%;
+  box-shadow: 0 12px 36px rgba(211,32,39,0.18);
+  border: 2.5px solid var(--sadd-yellow);
+  z-index: 2;
 }

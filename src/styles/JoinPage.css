@@ -1,0 +1,90 @@
+.join-page-container {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--light-gray);
+}
+
+.join-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+  padding: 48px 36px;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+}
+
+.join-title {
+  color: var(--sadd-red);
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.join-description {
+  color: var(--dark-gray);
+  font-size: 1.1rem;
+  margin-bottom: 32px;
+}
+
+.join-links {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.join-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  font-weight: 600;
+  padding: 14px 0;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.join-link span {
+  font-size: 1.5rem;
+  margin-right: 12px;
+}
+
+.join-link.discord {
+  background: #5865F2;
+}
+.join-link.discord:hover {
+  background: #4752c4;
+  transform: translateY(-2px) scale(1.03);
+}
+
+.join-link.instagram {
+  background: linear-gradient(90deg, #fd5, #f36, #c3f);
+}
+.join-link.instagram:hover {
+  background: linear-gradient(90deg, #f36, #fd5, #c3f);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.join-link.classroom {
+  background: #25A667;
+}
+.join-link.classroom:hover {
+  background: #1e8c57;
+  transform: translateY(-2px) scale(1.03);
+}
+
+.join-link.instagram span {
+  margin-right: 18px;
+}
+
+.join-icon {
+  font-size: 1.6rem;
+  margin-right: 16px;
+  vertical-align: middle;
+} 

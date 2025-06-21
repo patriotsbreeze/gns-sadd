@@ -17,6 +17,7 @@ function Navbar() {
           <Link to="/" className="nav-link">Home</Link>
           <Link to="/about" className="nav-link">About</Link>
           <Link to="/board" className="nav-link">Board</Link>
+          <Link to="/join" className="nav-link">Join</Link>
         </div>
         
         <div className="social-icons">

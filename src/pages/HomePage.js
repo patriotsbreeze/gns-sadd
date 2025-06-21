@@ -80,9 +80,9 @@ function HomePage() {
               We welcome all Great Neck South High School students who are passionate about making a difference. By joining SADD, you'll have the opportunity to develop leadership skills, participate in community service, and help create a safer environment for everyone.
             </p>
             <p>
-              Meetings are held every Wednesday after school in Room 234. Come be a part of a nationwide movement that is saving lives!
+              Come be a part of a nationwide movement that is saving lives!
             </p>
-            <a href="#" className="btn btn-secondary">Sign Up Now</a>
+            <Link to="/join" className="btn btn-secondary">Join Us Now</Link>
           </div>
         </div>
       </section>
